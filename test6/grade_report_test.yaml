@@ -1,0 +1,6 @@
+{report: {compile: {output: '', status: pass}, filename: test6/test.py, function: abbreviate_name,
+    grade: 0.0/100.0, language: python, parsecheck: {output: '', status: pass}, testrun: [
+      [fail, 'Test run exceeded timeout : 0.5'], [fail, 'Test run exceeded timeout
+          : 0.5'], [fail, 'Test run exceeded timeout : 0.5']], wellness: {convention: [
+        'test6/test.py:1: [C] Missing docstring'], error: [], fatal: [], refactor: [],
+      warning: ['test6/test.py:12: [W, abbreviate_name] Unused variable ''abbrev_name''']}}}

@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+# import our dependencies only!
+import sys
+import traceback
+
+# importing user code
+import test
+
+if __name__ == '__main__':
+	args = sys.argv[1:]
+	args_right = []
+	args_right.append(str('Bob Alan Faria Stewart '))
+	args_right.append(int('3'))
+	args_right.append(float('6.4'))
+	try:
+		return_val = test.abbreviate_name(*args_right)
+	except Exception as e:
+		exc_type, exc_value, exc_traceback = sys.exc_info()
+		print ("FAILED - STACKTRACE: ")
+		traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+		sys.exit(1)
+	return_data = float('3.0')
+        if type(return_val) is not type(return_data):
+                print ("FAILED - Expected : %s - Received : %s " %
+		  (return_data, return_val))
+		sys.exit(1)
+	if return_val != return_data:
+		print ("FAILED - Expected : %s - Received : %s " %
+		  (return_data, return_val))
+		sys.exit(1)
+	print ("PASSED - Expected : %s - Received : %s " %
+		(return_data, return_val))
+	sys.exit(0)

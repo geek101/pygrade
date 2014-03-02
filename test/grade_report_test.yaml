@@ -1,0 +1,12 @@
+{report: {compile: {output: '', status: pass}, filename: test/test.py, function: abbreviate_name,
+    grade: 0.0/100.0, language: python, parsecheck: {output: '', status: pass}, testrun: [
+      [fail, "FAILED - Expected Return Type: <type 'str'> - Received Return Type :\
+          \ <type 'int'> \n"], [fail, "FAILED - Expected Return Type: <type 'str'>\
+          \ - Received Return Type : <type 'int'> \n"], [fail, "FAILED - Expected\
+          \ Return Type: <type 'str'> - Received Return Type : <type 'int'> \n"]],
+    wellness: {convention: ['test/test.py:12: [C0326(bad-whitespace), ] No space allowed
+          before comma', 'test/test.py:1: [C0111(missing-docstring), ] Missing module
+          docstring'], error: [], fatal: [], refactor: [], warning: ['test/test.py:9:
+          [W0612(unused-variable), abbreviate_name] Unused variable ''abc''', 'test/test.py:10:
+          [W0612(unused-variable), abbreviate_name] Unused variable ''bcd''', 'test/test.py:8:
+          [W0612(unused-variable), abbreviate_name] Unused variable ''abbrev_name''']}}}

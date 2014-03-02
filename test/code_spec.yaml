@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# spec to evaluate and grade the coding test
+#-----------------------------------------------------------
+
+# codespec gives us input on how to understand the code
+codespec:
+  filesizelimit: 1           # in MB
+  language: 'python'
+  function: 'abbreviate_name'
+  argcount: 1
+  argnames:
+    - full_name
+  argtypes:
+    - string
+  returntype:
+    - string
+
+# evalspec gives us flexibility in grading various
+# eval points, like coding standards, bad code,
+# non-working code, each test case weight
+evalspec:
+  grademax: 100
+  wellness:
+    convention:
+      maxhit: 10
+      error: 1
+    refactor:
+      maxhit: 20
+      error: 2
+    warning:
+      maxhit: 100
+      error: 10
+    error:
+      maxhit: 100
+      error: 20
+  testcases:
+    maxhit: 100
+    count: 3
+    timeout: 2
+    input:
+      - [ 'John Smith' ]
+      - [ 'Anna Maria Simpson ']
+      - [ 'Bob Alan Faria Stewart ']
+    output:
+      - 'John S. '
+      - 'Anna. M. S.'
+      - 'Bob. A. F.'

@@ -1,0 +1,9 @@
+{report: {compile: {output: '', status: pass}, filename: test3/test.py, function: abbreviate_name,
+    grade: 69.0/100.0, language: python, parsecheck: {output: '', status: pass}, testrun: [
+      [pass, "PASSED - Expected : 1.0 - Received : 1.0 \n"], [pass, "PASSED - Expected\
+          \ : 2.0 - Received : 2.0 \n"], [pass, "PASSED - Expected : 3.0 - Received\
+          \ : 3.0 \n"]], wellness: {convention: ['test3/test.py:1: [C] Missing docstring'],
+      error: [], fatal: [], refactor: [], warning: ['test3/test.py:10: [W, abbreviate_name]
+          Unused variable ''bcd''', 'test3/test.py:2: [W, abbreviate_name] Unused
+          argument ''p3arg''', 'test3/test.py:9: [W, abbreviate_name] Unused variable
+          ''abbrev_name''']}}}

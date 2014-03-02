@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Evaluation Report yaml file structure
+#-----------------------------------------------------------
+
+report:
+  function: 'abbreviate_name'
+  filename: 'test.py'
+  language: 'python'
+  parsecheck:
+    status: 'pass'
+    output: ""
+  compile:
+    status: 'pass'
+    output: 'blah blah blah'
+  wellness:
+    convention:
+      - [ 'C ...', 'C ...', 'C ...' ]
+    refactor:
+      - [ 'R ...', 'R ...' ]
+    warning:
+      - [ 'W ... ' ]
+    error:
+      - []
+    fatal:
+      - []
+  testrun:
+    - [ 'fail', 'Killed due to timeout' ]
+    - [ 'none', 'error Popen' ]
+    - [ 'pass', 'PASSED - ...' ]
+

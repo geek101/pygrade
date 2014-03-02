@@ -1,0 +1,8 @@
+{report: {compile: {output: '', status: pass}, filename: test.py, function: abbreviate_name,
+    language: python, parsecheck: {output: '', status: pass}, testrun: [[fail, "FAILED\
+          \ - Expected : John S. - Recieved : John S.  \n"], [fail, "FAILED - Expected\
+          \ : A. M. Simpson - Recieved : Anna M. S.  \n"], [fail, "FAILED - Expected\
+          \ : B. A. F. Stewart - Recieved : Bob A. F. S.  \n"]], wellness: {convention: [
+        'test.py:1: [C] Missing docstring'], error: [], fatal: [], refactor: [], warning: [
+        'test.py:9: [W, abbreviate_name] Unused variable ''abc''', 'test.py:10: [W,
+          abbreviate_name] Unused variable ''bcd''']}}}
