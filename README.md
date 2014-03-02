@@ -20,6 +20,7 @@ You will need to have a python function that needs to be graded ofcourse.
 
 Example:
 
+```python
 """
 Keep pylint happy!
 """
@@ -40,17 +41,17 @@ def abbreviate_name(full_name):
             abbrev_name += name[0] + ". "
 
     return abbrev_name
-
+```
 
 Step 2
 ------
 
 Create an yaml to grade it, most of the yaml items are obvious.
 
-
-#-----------------------------------------------------------
+```
+#----------------------
 # spec to evaluate and grade the coding test
-#-----------------------------------------------------------
+#----------------------
 
 # codespec gives us input on how to understand the code
 codespec:
@@ -95,15 +96,19 @@ evalspec:
       - 'John S. '
       - 'Anna M. S. '
       - 'Bob A. F. S. '
+```
 
+Usage example
+=============
 
-Usage example:
+```
 ./gradepython.py -s test1/code_spec.yaml -u test1/test.py
+```
 
 Output
 ======
 
-
+```
 --------------------------------------------------
 Report
 --------------------------------------------------
@@ -137,6 +142,6 @@ Test Report
 	Test [3], PASSED - Expected : Bob A. F. S.  - Received : Bob A. F. S.
 
 --------------------------------------------------
-
+```
 
 
